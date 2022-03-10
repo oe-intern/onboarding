@@ -33,7 +33,18 @@ GET all author of a books
 GET /books/:id/authors
 ```
 
+Delete a book
+```
+DELETE /books/:id
+```
+
 Delete a author out of a book
 ```
 DELETE /books/:id/authors/:author_id
+```
+
+Unpublish a book
+```
+PUT /books/:id { visible: false }
+POST /books/:id/unpublish
 ```
